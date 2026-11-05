@@ -48,8 +48,14 @@ pod re-test passed at overshoot 0.5.
 
 ## Install
 
-Copy this folder as `ComfyUI-IdeaForge` into
-`ComfyUI/custom_nodes` and restart ComfyUI.
+```bash
+cd ComfyUI/custom_nodes
+git clone https://github.com/seren-alegro/ComfyUI-IdeaForge
+# restart ComfyUI
+```
+
+Or copy this folder as `ComfyUI-IdeaForge` into `ComfyUI/custom_nodes`
+manually, then restart ComfyUI.
 
 ## Tests
 

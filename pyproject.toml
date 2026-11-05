@@ -1,0 +1,9 @@
+[project]
+name = "comfyui-ideaforge"
+version = "0.1.8"
+description = "Standalone samplers built from published mathematical concepts (overshooting, embedded-error guidance, Taylor expansion, schedule warping, density probing). Ideas referenced, implementations original."
+license = { text = "MIT" }
+
+[tool.comfy]
+PublisherId = "seren"
+DisplayName = "Sampler Ideas"

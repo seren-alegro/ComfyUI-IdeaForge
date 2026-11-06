@@ -32,7 +32,7 @@ loading.
 
 ## Verified on real hardware — and one bug worth writing down
 
-Tested on an RTX PRO 6000 (MIG 24 GB) pod, ComfyUI 0.44,
+Tested on an RTX PRO 6000 (MIG 24 GB) pod, mac studio m3 ultra 512gb, ComfyUI 0.44,
 Chiarezza 2.9B hybrid: all four samplers generate cleanly, via
 both the standalone nodes and the KSampler registration.
 
@@ -44,7 +44,7 @@ per-step bias that compounds. The flow-correct step subtracts
 `(sigma_next − s_over) · denoised` after re-noising; a numpy
 check of the one-step statistics (signal coefficient 0.348
 before, 0.298 after, target 0.300) confirmed the fix before the
-pod re-test passed at overshoot 0.5.
+pod re-test passed at overshoot 0.5.(same mac studio)
 
 ## Install
 
@@ -73,5 +73,5 @@ MIT
 논문·글에서 본 수학 구상 다섯 개를 깨끗하게 다시 구현한 실험
 샘플러 팩이에요. Overshoot, ERK Guidance, Flow Taylor, Density
 Probe 샘플러와 Warp Sigma 스케줄러가 들어 있고, 앞의 네 샘플러는
-일반 KSampler 목록에도 등록돼요. 전 샘플러 포드 실측을 마쳤고,
+일반 KSampler 목록에도 등록돼요. 전 샘플러 포드와 mac studio m3 ultra 512gb으로 실측을 마쳤고,
 Overshoot의 flow용 재노이즈 보정 과정도 위에 기록해뒀어요.

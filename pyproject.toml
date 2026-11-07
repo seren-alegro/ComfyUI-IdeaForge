@@ -5,5 +5,5 @@ description = "Standalone samplers built from published mathematical concepts (o
 license = { text = "MIT" }
 
 [tool.comfy]
-PublisherId = "seren"
+PublisherId = "seren-alegro"
 DisplayName = "Sampler Ideas"

@@ -4,6 +4,9 @@ version = "0.1.8"
 description = "Standalone samplers built from published mathematical concepts (overshooting, embedded-error guidance, Taylor expansion, schedule warping, density probing). Ideas referenced, implementations original."
 license = { text = "MIT" }
 
+[project.urls]
+Repository = "https://github.com/seren-alegro/ComfyUI-IdeaForge"
+
 [tool.comfy]
 PublisherId = "seren-alegro"
 DisplayName = "Sampler Ideas"
